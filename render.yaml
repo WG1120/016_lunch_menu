@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: lunch-menu
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: NAVER_CLIENT_ID
+        sync: false
+      - key: NAVER_CLIENT_SECRET
+        sync: false
+      - key: PYTHON_VERSION
+        value: "3.12"

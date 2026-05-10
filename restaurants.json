@@ -1,0 +1,422 @@
+[
+  {
+    "name": "무교동북어국집",
+    "category": "한식",
+    "category_detail": "한식>해장국",
+    "address": "서울특별시 중구 다동 173",
+    "link": "",
+    "distance_m": 237,
+    "walk_minutes": 3,
+    "walk_display": "약 3분"
+  },
+  {
+    "name": "가배도 시청점",
+    "category": "기타",
+    "category_detail": "음식점>카페,디저트>카페",
+    "address": "서울특별시 중구 태평로2가 329-12 1-4층",
+    "link": "https://www.instagram.com/gbdcoffee",
+    "distance_m": 347,
+    "walk_minutes": 4,
+    "walk_display": "약 4분"
+  },
+  {
+    "name": "멘무샤 시청점",
+    "category": "일식",
+    "category_detail": "음식점>일식>일본식라면",
+    "address": "서울특별시 중구 북창동 14-5",
+    "link": "http://www.menmusha.co.kr/",
+    "distance_m": 293,
+    "walk_minutes": 4,
+    "walk_display": "약 4분"
+  },
+  {
+    "name": "송원스키야키&샤브샤브",
+    "category": "일식",
+    "category_detail": "음식점>일식>샤브샤브",
+    "address": "서울특별시 중구 북창동 14-5 2층",
+    "link": "",
+    "distance_m": 294,
+    "walk_minutes": 4,
+    "walk_display": "약 4분"
+  },
+  {
+    "name": "남경",
+    "category": "중식",
+    "category_detail": "중식>중식당",
+    "address": "서울특별시 중구 북창동 11-2 문왕빌딩",
+    "link": "",
+    "distance_m": 315,
+    "walk_minutes": 4,
+    "walk_display": "약 4분"
+  },
+  {
+    "name": "교동전선생 서소문점",
+    "category": "기타",
+    "category_detail": "술집>전통,민속주점",
+    "address": "서울특별시 중구 서소문동 102",
+    "link": "http://www.jeonssam.co.kr/",
+    "distance_m": 375,
+    "walk_minutes": 5,
+    "walk_display": "약 5분"
+  },
+  {
+    "name": "십원집",
+    "category": "한식",
+    "category_detail": "한식>돼지고기구이",
+    "address": "서울특별시 중구 서소문동 101-1",
+    "link": "",
+    "distance_m": 363,
+    "walk_minutes": 5,
+    "walk_display": "약 5분"
+  },
+  {
+    "name": "완백부대찌개삼겹살 시청역씨티스퀘어점",
+    "category": "한식",
+    "category_detail": "한식>찌개,전골",
+    "address": "서울특별시 중구 서소문동 143 씨티스퀘어 지하1층 B103호",
+    "link": "",
+    "distance_m": 426,
+    "walk_minutes": 5,
+    "walk_display": "약 5분"
+  },
+  {
+    "name": "고레카레 시티스퀘어시청점",
+    "category": "일식",
+    "category_detail": "음식점>일식>카레",
+    "address": "서울특별시 중구 서소문동 85-3",
+    "link": "",
+    "distance_m": 426,
+    "walk_minutes": 5,
+    "walk_display": "약 5분"
+  },
+  {
+    "name": "유브유부 씨티스퀘어점",
+    "category": "분식",
+    "category_detail": "분식>종합분식",
+    "address": "서울특별시 중구 서소문동 143 씨티스퀘어 지하1층",
+    "link": "https://youtube.com/channel/UCO6if6UA03bGLZvi-0jxiIQ?feature=shared",
+    "distance_m": 426,
+    "walk_minutes": 5,
+    "walk_display": "약 5분"
+  },
+  {
+    "name": "서평옥 씨티스퀘어점",
+    "category": "한식",
+    "category_detail": "음식점>한식",
+    "address": "서울특별시 중구 서소문동 143 지하B104-2호",
+    "link": "",
+    "distance_m": 426,
+    "walk_minutes": 5,
+    "walk_display": "약 5분"
+  },
+  {
+    "name": "굽돌집 서울시청본점",
+    "category": "한식",
+    "category_detail": "한식>육류,고기요리",
+    "address": "서울특별시 중구 북창동 63 1, 2층 굽돌집",
+    "link": "",
+    "distance_m": 391,
+    "walk_minutes": 5,
+    "walk_display": "약 5분"
+  },
+  {
+    "name": "북창동개성칼만두 서울시청역본점",
+    "category": "한식",
+    "category_detail": "한식>칼국수,만두",
+    "address": "서울특별시 중구 북창동 92 지층 B1",
+    "link": "",
+    "distance_m": 398,
+    "walk_minutes": 5,
+    "walk_display": "약 5분"
+  },
+  {
+    "name": "포항집",
+    "category": "한식",
+    "category_detail": "한식>생선회",
+    "address": "서울특별시 중구 서소문동 48-1 포항집",
+    "link": "",
+    "distance_m": 518,
+    "walk_minutes": 6,
+    "walk_display": "약 6분"
+  },
+  {
+    "name": "쪽삼상회",
+    "category": "한식",
+    "category_detail": "음식점>한식",
+    "address": "서울특별시 중구 태평로2가 69-13 1층 102호",
+    "link": "https://www.instagram.com/jjoksamsanghoe?igsh=aHk3bnVoNm9wYnl1",
+    "distance_m": 461,
+    "walk_minutes": 6,
+    "walk_display": "약 6분"
+  },
+  {
+    "name": "술술돼지",
+    "category": "한식",
+    "category_detail": "음식점>한식",
+    "address": "서울특별시 중구 서소문동 120-35 1층",
+    "link": "",
+    "distance_m": 527,
+    "walk_minutes": 7,
+    "walk_display": "약 7분"
+  },
+  {
+    "name": "누구나홀딱반한닭 시청역점",
+    "category": "치킨",
+    "category_detail": "음식점>치킨,닭강정",
+    "address": "서울특별시 중구 서소문동 120-12",
+    "link": "https://www.instagram.com/nuguna_banhandak",
+    "distance_m": 547,
+    "walk_minutes": 7,
+    "walk_display": "약 7분"
+  },
+  {
+    "name": "함평집 서울시청점",
+    "category": "한식",
+    "category_detail": "음식점>한식",
+    "address": "서울특별시 중구 서소문동 120-14 부림빌딩 1층",
+    "link": "",
+    "distance_m": 585,
+    "walk_minutes": 7,
+    "walk_display": "약 7분"
+  },
+  {
+    "name": "전주다대기",
+    "category": "한식",
+    "category_detail": "음식점>한식",
+    "address": "서울특별시 중구 서소문동 120-14 1층 102호",
+    "link": "https://app.catchtable.co.kr/ct/shop/jeon_ju_dadeagi",
+    "distance_m": 594,
+    "walk_minutes": 7,
+    "walk_display": "약 7분"
+  },
+  {
+    "name": "명동순대국",
+    "category": "한식",
+    "category_detail": "한식>순대,순댓국",
+    "address": "서울특별시 중구 을지로2가 197 천일한의원",
+    "link": "",
+    "distance_m": 527,
+    "walk_minutes": 7,
+    "walk_display": "약 7분"
+  },
+  {
+    "name": "우림정",
+    "category": "한식",
+    "category_detail": "한식>찌개,전골",
+    "address": "서울특별시 중구 서소문동 120-29 우림정",
+    "link": "",
+    "distance_m": 581,
+    "walk_minutes": 7,
+    "walk_display": "약 7분"
+  },
+  {
+    "name": "정동칼국수",
+    "category": "한식",
+    "category_detail": "한식>칼국수,만두",
+    "address": "서울특별시 중구 서소문동 53-3 2층",
+    "link": "",
+    "distance_m": 550,
+    "walk_minutes": 7,
+    "walk_display": "약 7분"
+  },
+  {
+    "name": "유방녕의 웍",
+    "category": "중식",
+    "category_detail": "중식>중식당",
+    "address": "서울특별시 중구 서소문동 52-7 2층",
+    "link": "https://www.instagram.com/liufangning_wok",
+    "distance_m": 541,
+    "walk_minutes": 7,
+    "walk_display": "약 7분"
+  },
+  {
+    "name": "승환네닭한마리",
+    "category": "한식",
+    "category_detail": "한식>닭요리",
+    "address": "서울특별시 중구 서소문동 52-2",
+    "link": "https://instagram.com/seunghwan_dakhanmari?igshid=6omq6gljx2oa",
+    "distance_m": 534,
+    "walk_minutes": 7,
+    "walk_display": "약 7분"
+  },
+  {
+    "name": "이타마에스시 광화문디타워점",
+    "category": "일식",
+    "category_detail": "음식점>일식>일식당",
+    "address": "서울특별시 종로구 청진동 246 광화문디타워 5층",
+    "link": "https://app.catchtable.co.kr/ct/shop/itamaesushi?from=share&type=DINING",
+    "distance_m": 533,
+    "walk_minutes": 7,
+    "walk_display": "약 7분"
+  },
+  {
+    "name": "담원순대 시청본점",
+    "category": "한식",
+    "category_detail": "한식>순대,순댓국",
+    "address": "서울특별시 중구 서소문동 120-21 1층",
+    "link": "",
+    "distance_m": 638,
+    "walk_minutes": 8,
+    "walk_display": "약 8분"
+  },
+  {
+    "name": "김명자굴국밥",
+    "category": "한식",
+    "category_detail": "한식>국밥",
+    "address": "서울특별시 중구 서소문동 120-23 부영빌딩 지하1층",
+    "link": "",
+    "distance_m": 644,
+    "walk_minutes": 8,
+    "walk_display": "약 8분"
+  },
+  {
+    "name": "정원레스토랑 어반가든",
+    "category": "양식",
+    "category_detail": "음식점>양식",
+    "address": "서울특별시 중구 정동 28-2",
+    "link": "http://urbangarden.co.kr",
+    "distance_m": 775,
+    "walk_minutes": 10,
+    "walk_display": "약 10분"
+  },
+  {
+    "name": "방일해장국 정동점",
+    "category": "한식",
+    "category_detail": "한식>해장국",
+    "address": "서울특별시 중구 충정로1가 51-6 동양빌딩",
+    "link": "",
+    "distance_m": 794,
+    "walk_minutes": 10,
+    "walk_display": "약 10분"
+  },
+  {
+    "name": "카츠하이드",
+    "category": "일식",
+    "category_detail": "음식점>일식>돈가스",
+    "address": "서울특별시 중구 순화동 151 지하1층 127호 카츠하이드",
+    "link": "https://www.instagram.com/katsuhide27",
+    "distance_m": 837,
+    "walk_minutes": 10,
+    "walk_display": "약 10분"
+  },
+  {
+    "name": "리나스 숭례문점",
+    "category": "양식",
+    "category_detail": "양식>샌드위치",
+    "address": "서울특별시 중구 봉래동1가 4-2 우남빌딩 1층",
+    "link": "https://www.instagram.com/linas_korea/",
+    "distance_m": 816,
+    "walk_minutes": 10,
+    "walk_display": "약 10분"
+  },
+  {
+    "name": "신의주찹쌀순대 명동역점",
+    "category": "한식",
+    "category_detail": "한식>순대,순댓국",
+    "address": "서울특별시 중구 충무로2가 65-11 지하 1층",
+    "link": "",
+    "distance_m": 910,
+    "walk_minutes": 11,
+    "walk_display": "약 11분"
+  },
+  {
+    "name": "카페아이엠티 을지로시그니처타워점",
+    "category": "기타",
+    "category_detail": "카페,디저트>카페",
+    "address": "서울특별시 중구 수표동 99 1층",
+    "link": "",
+    "distance_m": 922,
+    "walk_minutes": 12,
+    "walk_display": "약 12분"
+  },
+  {
+    "name": "이여곰탕 서울역점",
+    "category": "한식",
+    "category_detail": "음식점>한식>곰탕,설렁탕",
+    "address": "서울특별시 중구 남대문로5가 6-1 와이즈타워 지하1층",
+    "link": "",
+    "distance_m": 944,
+    "walk_minutes": 12,
+    "walk_display": "약 12분"
+  },
+  {
+    "name": "달인명동칼국수보쌈",
+    "category": "한식",
+    "category_detail": "음식점>한식",
+    "address": "서울특별시 중구 남대문로5가 163 이프라자 지하",
+    "link": "",
+    "distance_m": 967,
+    "walk_minutes": 12,
+    "walk_display": "약 12분"
+  },
+  {
+    "name": "슬로우캘리 충무로점",
+    "category": "기타",
+    "category_detail": "도시락,컵밥>다이어트,샐러드",
+    "address": "서울특별시 중구 필동1가 3-5 1층 104호",
+    "link": "http://www.slowcali.co.kr",
+    "distance_m": 1313,
+    "walk_minutes": 16,
+    "walk_display": "약 16분"
+  },
+  {
+    "name": "오한수우육면가 중구점",
+    "category": "중식",
+    "category_detail": "음식점>중식당",
+    "address": "서울특별시 중구 초동 62 1층 오한수 우육면가 중구점",
+    "link": "",
+    "distance_m": 1292,
+    "walk_minutes": 16,
+    "walk_display": "약 16분"
+  },
+  {
+    "name": "멘츠루 을지로점",
+    "category": "일식",
+    "category_detail": "음식점>일식>일본식라면",
+    "address": "서울특별시 중구 초동 158-6 1층",
+    "link": "https://www.instagram.com/menchuru_euljiro/",
+    "distance_m": 1254,
+    "walk_minutes": 16,
+    "walk_display": "약 16분"
+  },
+  {
+    "name": "백채김치찌개 동국대점",
+    "category": "한식",
+    "category_detail": "한식>찌개,전골",
+    "address": "서울특별시 중구 충무로5가 90 1층 116호",
+    "link": "https://www.instagram.com/100chae_kr/",
+    "distance_m": 1922,
+    "walk_minutes": 24,
+    "walk_display": "약 24분"
+  },
+  {
+    "name": "브라운돈까스 동대문역사문화공원역점",
+    "category": "일식",
+    "category_detail": "음식점>일식>돈가스",
+    "address": "서울특별시 중구 광희동1가 166",
+    "link": "https://browntonkatsu.com/",
+    "distance_m": 2479,
+    "walk_minutes": 31,
+    "walk_display": "약 31분"
+  },
+  {
+    "name": "오늘통닭 도화점",
+    "category": "치킨",
+    "category_detail": "음식점>치킨,닭강정",
+    "address": "서울특별시 마포구 도화동 357 상가동 13동 102호 오늘통닭 도화점",
+    "link": "https://www.instagram.com/ohnuldak_master/",
+    "distance_m": 3489,
+    "walk_minutes": 44,
+    "walk_display": "약 44분"
+  },
+  {
+    "name": "위풍당당족발 신당점",
+    "category": "한식",
+    "category_detail": "한식>족발,보쌈",
+    "address": "서울특별시 중구 신당동 120-16",
+    "link": "http://www.instagram.com/wepung.sindang",
+    "distance_m": 3539,
+    "walk_minutes": 44,
+    "walk_display": "약 44분"
+  }
+]

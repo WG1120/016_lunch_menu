@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시청 근처 점심 추천</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f6fa;
+            color: #2d3436;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0984e3, #6c5ce7);
+            color: white;
+            padding: 2rem 1rem 1rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+
+        .header p {
+            font-size: 0.85rem;
+            opacity: 0.85;
+        }
+
+        /* 탭 */
+        .tabs {
+            display: flex;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 0.9rem;
+            border: none;
+            background: white;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #636e72;
+            cursor: pointer;
+            transition: all 0.2s;
+            border-bottom: 3px solid transparent;
+        }
+
+        .tab-btn.active {
+            color: #0984e3;
+            border-bottom-color: #0984e3;
+        }
+
+        .tab-btn:hover {
+            background: #f8f9fa;
+        }
+
+        /* 탭 콘텐츠 */
+        .tab-content {
+            display: none;
+            padding: 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* 추천 버튼 */
+        .recommend-section {
+            text-align: center;
+            margin-bottom: 1.2rem;
+        }
+
+        .recommend-btn {
+            background: linear-gradient(135deg, #0984e3, #6c5ce7);
+            color: white;
+            border: none;
+            padding: 0.85rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.15s, box-shadow 0.15s;
+            box-shadow: 0 4px 15px rgba(9, 132, 227, 0.3);
+        }
+
+        .recommend-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(9, 132, 227, 0.4);
+        }
+
+        .recommend-btn:active {
+            transform: translateY(0);
+        }
+
+        /* 테이블 */
+        .table-wrap {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: #f8f9fa;
+        }
+
+        th {
+            padding: 0.8rem 1rem;
+            text-align: left;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #636e72;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            padding: 0.85rem 1rem;
+            border-top: 1px solid #f1f2f6;
+            font-size: 0.9rem;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .name {
+            font-weight: 600;
+        }
+
+        .category-badge {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: #dfe6e9;
+            color: #2d3436;
+        }
+
+        .category-badge.한식 { background: #ffeaa7; color: #6b5900; }
+        .category-badge.중식 { background: #fab1a0; color: #6b2100; }
+        .category-badge.일식 { background: #81ecec; color: #005b5b; }
+        .category-badge.양식 { background: #a29bfe; color: #2d1f8e; }
+        .category-badge.분식 { background: #fd79a8; color: #6b0030; }
+        .category-badge.치킨 { background: #fdcb6e; color: #6b4e00; }
+        .category-badge.아시안 { background: #55efc4; color: #005b3a; }
+
+        .walk-time {
+            color: #0984e3;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .map-link {
+            display: inline-block;
+            padding: 0.35rem 0.8rem;
+            background: #00b894;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            transition: background 0.2s;
+            white-space: nowrap;
+        }
+
+        .map-link:hover {
+            background: #00a381;
+        }
+
+        .map-link.disabled {
+            background: #b2bec3;
+            pointer-events: none;
+        }
+
+        .count-info {
+            text-align: right;
+            padding: 0.5rem 0;
+            font-size: 0.8rem;
+            color: #636e72;
+        }
+
+        /* 추천 결과 애니메이션 */
+        @keyframes fadeSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .recommend-result {
+            animation: fadeSlideIn 0.4s ease;
+        }
+
+        /* 빈 상태 */
+        .empty-state {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: #b2bec3;
+        }
+
+        .empty-state .icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* 테이블 가로 스크롤 대비 */
+        .table-wrap {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        table {
+            min-width: 340px;
+        }
+
+        /* 긴 식당명 줄바꿈 처리 */
+        .name {
+            word-break: keep-all;
+            max-width: 180px;
+        }
+
+        /* 반응형 */
+        @media (max-width: 600px) {
+            .header { padding: 1.5rem 1rem 0.8rem; }
+            .header h1 { font-size: 1.2rem; }
+            .header p { font-size: 0.75rem; }
+            .tab-content { padding: 0.7rem; }
+            th, td { padding: 0.6rem 0.4rem; font-size: 0.78rem; }
+            .map-link { padding: 0.3rem 0.6rem; font-size: 0.72rem; }
+            .category-badge { font-size: 0.68rem; padding: 0.15rem 0.4rem; }
+            .name { max-width: 120px; font-size: 0.78rem; }
+            .recommend-btn { padding: 0.75rem 1.5rem; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>시청 근처 점심 추천</h1>
+        <p>서울시청 기준 도보 거리 맛집 모음</p>
+    </div>
+
+    <div class="tabs">
+        <button class="tab-btn active" onclick="switchTab('list')">전체 목록</button>
+        <button class="tab-btn" onclick="switchTab('recommend')">추천</button>
+    </div>
+
+    <!-- 전체 목록 탭 -->
+    <div id="tab-list" class="tab-content active">
+        <div class="count-info">총 {{ restaurants|length }}개 식당</div>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>식당명</th>
+                        <th>분류</th>
+                        <th>도보</th>
+                        <th>지도</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for r in restaurants %}
+                    <tr>
+                        <td class="name">{{ r.name }}</td>
+                        <td><span class="category-badge {{ r.category }}">{{ r.category }}</span></td>
+                        <td class="walk-time">{{ r.walk_display }}</td>
+                        <td>
+                            {% if r.link %}
+                            <a href="{{ r.link }}" target="_blank" rel="noopener" class="map-link">지도</a>
+                            {% else %}
+                            <span class="map-link disabled">지도</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- 추천 탭 -->
+    <div id="tab-recommend" class="tab-content">
+        <div class="recommend-section">
+            <button class="recommend-btn" onclick="getRecommendation()">오늘의 추천 뽑기</button>
+        </div>
+        <div id="recommend-result">
+            <div class="empty-state">
+                <div class="icon">🍽️</div>
+                <p>버튼을 눌러 오늘의 추천을 받아보세요</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tab) {
+            // 탭 버튼 활성화
+            document.querySelectorAll('.tab-btn').forEach((btn, i) => {
+                btn.classList.toggle('active', (tab === 'list' && i === 0) || (tab === 'recommend' && i === 1));
+            });
+            // 탭 콘텐츠 전환
+            document.getElementById('tab-list').classList.toggle('active', tab === 'list');
+            document.getElementById('tab-recommend').classList.toggle('active', tab === 'recommend');
+        }
+
+        function getRecommendation() {
+            fetch('/api/recommend')
+                .then(res => res.json())
+                .then(data => {
+                    const container = document.getElementById('recommend-result');
+                    let html = '<div class="table-wrap recommend-result"><table>';
+                    html += '<thead><tr><th>식당명</th><th>분류</th><th>도보</th><th>지도</th></tr></thead>';
+                    html += '<tbody>';
+                    data.forEach(r => {
+                        const linkHtml = r.link
+                            ? `<a href="${r.link}" target="_blank" rel="noopener" class="map-link">지도</a>`
+                            : '<span class="map-link disabled">지도</span>';
+                        html += `<tr>
+                            <td class="name">${r.name}</td>
+                            <td><span class="category-badge ${r.category}">${r.category}</span></td>
+                            <td class="walk-time">${r.walk_display}</td>
+                            <td>${linkHtml}</td>
+                        </tr>`;
+                    });
+                    html += '</tbody></table></div>';
+                    container.innerHTML = html;
+                });
+        }
+    </script>
+</body>
+</html>
